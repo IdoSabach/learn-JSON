@@ -59,3 +59,9 @@ function populateHeroes(obj) {
 
 populate();
 
+const arr = ["ido","idodo","idodi"]
+localStorage.setItem("myArr",JSON.stringify(arr))
+const data = JSON.parse(localStorage.getItem("myArr"))
+
+console.log(data)
+
