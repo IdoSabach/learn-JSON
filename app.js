@@ -55,13 +55,29 @@ function populateHeroes(obj) {
   }
 }
 
-
-
 populate();
 
-const arr = ["ido","idodo","idodi"]
-localStorage.setItem("myArr",JSON.stringify(arr))
-const data = JSON.parse(localStorage.getItem("myArr"))
+const todoList = {
+  project: [
+    {
+      name: "inbox",
+      task: [],
+    },
+    {
+      name: "thisDay",
+      task: [],
+    },
+    {
+      name: "thisWeek",
+      task: [],
+    },
+  ],
+};
 
-console.log(data)
 
+
+
+localStorage.setItem("myArr", JSON.stringify(todoList));
+const data = JSON.parse(localStorage.getItem("myArr"));
+
+console.log(data);
